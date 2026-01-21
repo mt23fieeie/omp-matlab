@@ -58,20 +58,16 @@ $$
 
 ## Metrics
 
-- **hit**: Number of correctly recovered support indices:
-  $$
-  |S_0 \cap \hat{S}|.
-  $$
+To evaluate the recovery performance, we use the following three indicators:
 
-- **rel_err_x**: Relative coefficient error:
-  $$
-  \frac{\|\hat{x} - x_0\|_2}{\|x_0\|_2}.
-  $$
+* **Hit Count**: The number of correctly recovered support indices, representing the intersection between the ground-truth support ($S_0$) and the estimated support ($\hat{S}$):
+    $$|S_0 \cap \hat{S}|$$
 
-- **rel_resid**: Relative residual:
-  $$
-  \frac{\|b - A \hat{x}\|_2}{\|b\|_2}.
-  $$
+* **Relative Coefficient Error (rel_err_x)**: Measures the distance between the estimated sparse vector $\hat{x}$ and the ground-truth $x_0$:
+    $$\frac{\|\hat{x} - x_0\|_2}{\|x_0\|_2}$$
+
+* **Relative Residual (rel_resid)**: Measures how well the recovered signal approximates the observation $b$ in the measurement space:
+    $$\frac{\|b - A \hat{x}\|_2}{\|b\|_2}$$
 
 ## Results Table
 
