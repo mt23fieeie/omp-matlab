@@ -2,6 +2,10 @@
 
 A minimal MATLAB implementation of **Orthogonal Matching Pursuit (OMP)** for sparse recovery.
 
+This implementation follows the standard OMP algorithm as described in  
+**M. Elad, _Sparse and Redundant Representations: From Theory to Applications in Signal and Image Processing_**,  
+specifically Chapter 3 (Matching Pursuit family), Fig. 3.1.
+
 Given a dictionary $A \in \mathbb{R}^{n \times m}$ and an observation $b \in \mathbb{R}^n$, recover a **$K$-sparse** coefficient vector $x$ such that
 
 $$
